@@ -2,16 +2,23 @@ import React from 'react';
 import {
     Card, CardImg, CardBody, CardTitle, CardSubtitle, Button
   } from 'reactstrap';
+import styled from "styled-components";
 
 function MyCard(props) {
+
+    const Div = styled.div`
+       width: 30%;
+       margin: 1% 35%;
+    `
+
    return (
 
-    <div className='container'>
+    <Div>
         <Card>
             <CardTitle>{props.me.login}</CardTitle>
             <CardBody>
                 <CardImg 
-                width="20%"
+                width="100%"
                 alt={props.me.login}
                 src={props.me.avatar_url}
                 />
@@ -21,7 +28,7 @@ function MyCard(props) {
                 </Button>
             </CardBody>
         </Card>
-    </div>
+    </Div>
 
    );
 }

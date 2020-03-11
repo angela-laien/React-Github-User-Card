@@ -7,9 +7,8 @@ import {
 function FollowerCard(props) {
 
     const Box = styled.div`
-        border: 2px solid hotpink;
-        width: 20%;
-        margin: 1.8% 0% 1.8% 0%;
+        width: 100%;
+        margin: 1.8% 0% 5% 0%;
         padding: 1% 0% 1.5% 0%;
     `;
 
@@ -23,7 +22,7 @@ function FollowerCard(props) {
                     <CardBody>
                         <Div><CardTitle>{props.follower.login}</CardTitle></Div>
                         <CardImg
-                            width="80%"
+                            width="100%"
                             alt={props.follower.login}
                             src={props.follower.avatar_url}
                         />
